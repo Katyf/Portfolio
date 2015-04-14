@@ -1,0 +1,171 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import "mixins";
+@import "variables";
+@import "gallery";
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  p {
+    font-size: 12px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+}
+
+div.bar {
+  width: 40%;
+  height: 80px;
+  background-color: rgba(55,55,55,0.7);
+  padding: 30px;
+  margin-top: 100px;
+  h1 {
+    color: white;
+    font-size: 30px;
+  }
+}
+
+
+div#main-box{
+  background-color: rgba(5,5,5,0.7);
+  color: white;
+  height: 100vh;
+  width: 30%;
+  margin: -9px auto 0;
+  padding: 100px;
+  z-index: 999;
+  position: relative;
+  }
+
+  .block {
+    height: 100%;
+    margin: auto;
+    padding: 100px 0 300px 0;
+    h1 {
+      margin: 0 auto 30px;
+    }
+  }
+
+#about {
+  // padding: 0 20px;
+  .col-md-4 {
+    padding: 0;
+  }
+  img#profpic {
+    height: 200px;
+    width: 200px;
+    border: 3px solid #222222;
+    border-radius: 300%;
+    float: left;
+  }
+  .about-wrapper {
+      float: right;
+      max-width: 70%;
+      padding-top: 10px;
+      p {
+        line-height: 24px;
+      }
+    }
+}
+
+div.buttons {
+  padding: 20px 20px 20px 0px;
+  button {
+    background-color: white;
+    float: right;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: 1px solid grey;
+  }
+  & .active {
+      background-color: black;
+      color: white;
+    }
+}
+
+.projects {
+  margin-top: -100px;
+  .row {
+    padding-left: 40px;
+  }
+}
+.overlay{
+  background:rgba(0,0,0,.75);
+  text-align:center;
+  padding:45px 0 66px 0;
+  color: white;
+  height: 100%;
+  width: 100%;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
+.project {
+    height: 180px;
+    max-width: 250px;
+    margin: 1px;
+    background-color: rgba(5,5,5,0.3);
+    padding: 0;
+    display: none;
+    :hover.overlay {
+      opacity:1;
+    }
+  }
+
+
+
+#contact {
+  padding: 150px 0;
+  div.icons {
+    text-align: center;
+    i {
+      margin: 20px;
+    }
+  }
+  form {
+    padding: 50px;
+    max-width: 700px;
+    margin: 50px auto 50px;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(148,145,148,0.8);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(148,145,148,0.8);
+    box-shadow: 0px 0px 5px 2px rgba(148,145,148,0.8);
+    border-radius: 5px;
+    background-color: white;
+    textarea {
+      resize: none;
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
+
+footer {
+  bottom: 0;
+  height: 50px;
+  background-color: yellow;
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+
+// bootstrap default
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 850px;
+  }
+}

@@ -1,0 +1,159 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>vanilla</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="header">
+      <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#top">katyfeng</a>
+          </div>
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#about_section">About</a></li>
+              <li><a href="#projects_section">Projects</a></li>
+              <li><a ng-href="#/resume">Resume</a></li>
+              <li><a href="#contact_section">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main" id="top">
+    <div class="slider-container">
+      <div class="slider-photos">
+        <img class="post-image" src="images/test1.png">
+        <img class="post-image" src="images/test2.png">
+        <img class="post-image" src="images/test3.png">
+      </div>
+      <div class="slider-captions container">
+        <div class="caption-content"></div>
+      </div>
+      <div class="slider-nav"></div>
+      <div class="slider-step">
+        <a href="javascript:void(0)" title="" class="slider-nav prev"><span class="prev">&lt;</span></a>
+        <a href="javascript:void(0)"title="" class="slider-nav next"><span class="next">&gt;</span></a>
+      </div>
+    </div>
+      <div id="main-box">
+        <h3>Katy</h3>
+        <p>Some stuff here</p>
+      </div>
+    </div>
+
+    <!-- jump 1 -->
+    <a id="about_section"></a>
+      <div class="bar"><h1>ABOUT ME</h1></div>
+        <div id="about" class="container block row">
+          <img id="profpic" class="col-md-4" src="../images/me.jpg" alt="">
+            <div class="about-wrapper col-md-8">
+              <h4>Hi! I'm Katy, a full stack web developer with a background in art and design.</h4>
+              <p>I'm an avid consumer of all things new and innovative. Whether it be fashion or technology, I keep up on the latest trends. I have an adventurous spirit and am always down to try something new. I have an unrelentless shoe addiction and have been known to pack a punch in the boxing ring. I like my code clean, my clothes bold, and my coffee iced.</p>
+              <p>Please feel free to check out a couple of my projects below, or shoot me an email if you'd like to know more!</p>
+            </div>
+        </div>
+
+    <!-- jump 2 -->
+    <a id="projects_section"></a>
+    <div class="bar"><h1>PROJECTS</h1></div>
+      <div class="projects container block">
+        <div class="container buttons">
+          <button id="design">Design</button>
+          <button id="web" class="active">Apps</button>
+        </div>
+        <div class="row web">
+          <div class="col-md-4 project"><div class="overlay">yo</div></div>
+          <div class="col-md-4 project"><div class="overlay">yo</div></div>
+          <div class="col-md-4 project"><div class="overlay">yo</div></div>
+        </div>
+        <div class="row design">
+          <div class="col-md-4 project"><div class="overlay">yo</div></div>
+          <div class="col-md-4 project"><div class="overlay">yo</div></div>
+          <div class="col-md-4 project"><div class="overlay">yo</div></div>
+        </div>
+        <div class="row design">
+          <div class="col-md-4 project"><div class="overlay">yo</div></div>
+          <div class="col-md-4 project"><div class="overlay">yo</div></div>
+          <div class="col-md-4 project"><div class="overlay">yo</div></div>
+        </div>
+      </div>
+
+   <!--  jump 3 -->
+   <a id="contact_section"></a>
+    <div class="bar"><h1>CONTACT</h1></div>
+      <div id="contact" class="container block">
+        <div class="icons">
+          <a href= "#" class="show-form"><i class="fa fa-envelope fa-4x"></i></a>
+          <a href="http://www.github.com/katyf" target="_blank"><i class="fa fa-github fa-4x"></i></a>
+          <a href="http://www.linkedin.com/in/katyfeng" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a>
+        </div>
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="email" class="form-control" id="sender" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" class="form-control" placeholder="Say hello!"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default">Send</button>
+        </form>
+      </div>
+
+      <footer>
+        KRF
+      </footer>
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <!-- endbower -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
+    <!-- endbuild -->
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+       <script src="scripts/email.js"></script>
+        <script src="scripts/slider.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
