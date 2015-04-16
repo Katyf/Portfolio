@@ -2,10 +2,10 @@
 
 $(document).ready(function(){
 
+
 $('#web').on('click', function(){
   $('#web').addClass('active');
   $('#design').removeClass('active');
-  // $('#design-projects').fadeOut();
   $('.design .project').each(function() {
      $(this).hide();
    });
@@ -17,17 +17,16 @@ $('#web').on('click', function(){
 $('#design').on('click', function(){
   $('#design').addClass('active');
   $('#web').removeClass('active');
-  // $('#web-projects').fadeOut();
   $('.web .project').each(function() {
      $(this).hide();
    });
   $('.design .project').each(function(i) {
-     $(this).delay(400*i).fadeIn(1000);
+     $(this).delay(300*i).fadeIn(500);
    });
 });
 
 $('.web .project').each(function(i) {
-     $(this).delay(400*i).fadeIn(1000);
+     $(this).delay(300*i).fadeIn(500);
    });
 
 

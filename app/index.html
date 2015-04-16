@@ -22,58 +22,33 @@
     <!-- endbuild -->
   </head>
   <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <div class="header">
-      <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#top">katyfeng</a>
-          </div>
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#about_section">About</a></li>
-              <li><a href="#projects_section">Projects</a></li>
-              <li><a ng-href="#/resume">Resume</a></li>
-              <li><a href="#contact_section">Contact</a></li>
-            </ul>
-          </div>
-        </div>
+    <div id="main">
+       <nav class="collapse navbar-collapse" id="js-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a ng-href="#/">Home</a></li>
+          <li><a href="#about_section">About</a></li>
+          <li><a href="#projects_section">Projects</a></li>
+          <li><a href="#/resume">Resume</a></li>
+          <li><a href="#contact_section">Contact</a></li>
+        </ul>
+      </nav>
+      <img src="images/main_sq.png" alt="">
+      <div id="main-text">
+        <h1>k</h1>
+        <h4>katy feng</h4>
+        <p>designer // developer</p>
       </div>
     </div>
 
-    <div class="main" id="top">
-    <div class="slider-container">
-      <div class="slider-photos">
-        <img class="post-image" src="images/test1.png">
-        <img class="post-image" src="images/test2.png">
-        <img class="post-image" src="images/test3.png">
-      </div>
-      <div class="slider-captions container">
-        <div class="caption-content"></div>
-      </div>
-      <div class="slider-nav"></div>
-      <div class="slider-step">
-        <a href="javascript:void(0)" title="" class="slider-nav prev"><span class="prev">&lt;</span></a>
-        <a href="javascript:void(0)"title="" class="slider-nav next"><span class="next">&gt;</span></a>
-      </div>
-    </div>
-      <div id="main-box">
-        <h3>Katy</h3>
-        <p>Some stuff here</p>
-      </div>
+    <section class="content container">
+    <div id="hello">
+      <h1>Hi there!</h1>
+      <h1>I'm Katy</h1>
+      <p>Thanks for visiting my website. Have a look around.</p>
     </div>
 
     <!-- jump 1 -->
     <a id="about_section"></a>
-      <div class="bar"><h1>ABOUT ME</h1></div>
         <div id="about" class="container block row">
           <img id="profpic" class="col-md-4" src="../images/me.jpg" alt="">
             <div class="about-wrapper col-md-8">
@@ -85,8 +60,7 @@
 
     <!-- jump 2 -->
     <a id="projects_section"></a>
-    <div class="bar"><h1>PROJECTS</h1></div>
-      <div class="projects container block">
+      <div class="projects block">
         <div class="container buttons">
           <button id="design">Design</button>
           <button id="web" class="active">Apps</button>
@@ -110,8 +84,7 @@
 
    <!--  jump 3 -->
    <a id="contact_section"></a>
-    <div class="bar"><h1>CONTACT</h1></div>
-      <div id="contact" class="container block">
+      <div id="contact" class="block">
         <div class="icons">
           <a href= "#" class="show-form"><i class="fa fa-envelope fa-4x"></i></a>
           <a href="http://www.github.com/katyf" target="_blank"><i class="fa fa-github fa-4x"></i></a>
@@ -127,6 +100,7 @@
           <button type="submit" class="btn btn-default">Send</button>
         </form>
       </div>
+    </section>
 
       <footer>
         KRF
@@ -154,7 +128,7 @@
     <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="scripts/main.js"></script>
     <script src="scripts/email.js"></script>
-    <script src="scripts/slider.js"></script>
-    <!-- endbuild -->
+<!--     <script src="scripts/slider.js"></script>
+ -->    <!-- endbuild -->
 </body>
 </html>
