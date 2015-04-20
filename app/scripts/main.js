@@ -2,7 +2,6 @@
 
 $(document).ready(function(){
 
-
 $('#web').on('click', function(){
   $('#web').addClass('active');
   $('#design').removeClass('active');
@@ -35,7 +34,9 @@ $('.web .project').each(function(i) {
   $('.show-form').on('click', function(){
     $('#contact-form').slideDown();
   });
-
+  $('#send-email').on('click', function(){
+    $('#contact-form').hide();
+  });
   // scolling
   $('a[href^="#"]').on('click',function (e) {
       e.preventDefault();

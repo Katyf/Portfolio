@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>vanilla</title>
+    <title>Katy Feng</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -23,21 +23,14 @@
   </head>
   <body>
     <div id="main">
-       <nav class="collapse navbar-collapse" id="js-navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a ng-href="#/">Home</a></li>
-          <li><a href="#about_section">About</a></li>
-          <li><a href="#projects_section">Projects</a></li>
-          <li><a href="#/resume">Resume</a></li>
-          <li><a href="#contact_section">Contact</a></li>
-        </ul>
-      </nav>
       <img src="images/main_sq.png" alt="">
       <div id="main-text">
         <h1>k</h1>
         <h4>katy feng</h4>
         <p>designer // developer</p>
+        <a id="#down" href="#down"><i class="fa fa-angle-double-down fa-3x"></i></a>
       </div>
+      <div id="down"></div>
     </div>
 
     <section class="content container">
@@ -53,7 +46,7 @@
           <img id="profpic" class="col-md-4" src="../images/me.jpg" alt="">
             <div class="about-wrapper col-md-8">
               <h4>Hi! I'm Katy, a full stack web developer with a background in art and design.</h4>
-              <p>I'm an avid consumer of all things new and innovative. Whether it be fashion or technology, I keep up on the latest trends. I have an adventurous spirit and am always down to try something new. I have an unrelentless shoe addiction and have been known to pack a punch in the boxing ring. I like my code clean, my clothes bold, and my coffee iced.</p>
+              <p>I'm an avid consumer of all things new and innovative. Whether it be fashion or technology, I keep up on the latest trends. I have an adventurous spirit and am always down to try something new. I have a relentless shoe addiction and have been known to pack a punch in the boxing ring. I like my code clean, my clothes bold, and my coffee iced.</p>
               <p>Please feel free to check out a couple of my projects below, or shoot me an email if you'd like to know more!</p>
             </div>
         </div>
@@ -61,24 +54,33 @@
     <!-- jump 2 -->
     <a id="projects_section"></a>
       <div class="projects block">
-        <div class="container buttons">
+        <div class="container buttons" id="toggle-projects">
           <button id="design">Design</button>
           <button id="web" class="active">Apps</button>
         </div>
         <div class="row web">
-          <div class="col-md-4 project"><div class="overlay">yo</div></div>
-          <div class="col-md-4 project"><div class="overlay">yo</div></div>
-          <div class="col-md-4 project"><div class="overlay">yo</div></div>
+          <div class="col-md-4 project" id="motivatr"><div class="overlay">
+            <h4>Motivator</h4>My first app - pure ruby on rails goodness
+              <div class="project-button"><a href="https://shrouded-journey-1373.herokuapp.com/" target="_blank">Visit</a> | <a href="http://www.github.com/katyf/motivation_app" target="_blank">Github Repo</a></div>
+            </div></div>
+          <div class="col-md-4 project" id="filtr"><div class="overlay">
+            <h4>Filtr</h4>A photo sharing app written in JS/Backbone with a Rails API
+              <div class="project-button"><a href="https://github.com/TeamJKG/filtr_frontend" target="_blank">Github Repo</a></div>
+            </div></div>
+          <div class="col-md-4 project" id="buzz"><div class="overlay">
+            <h4>theBuzz</h4>A customizable personal homepage that lets you pull in any RSS feed from around the web
+              <div class="project-button"><a href="http://katyf.github.io/theBuzz" target="_blank">Visit</a> | <a href="http://www.github.com/katyf/theBuzz" target="_blank">Github Repo</a></div>
+            </div></div>
         </div>
         <div class="row design">
-          <div class="col-md-4 project"><div class="overlay">yo</div></div>
-          <div class="col-md-4 project"><div class="overlay">yo</div></div>
-          <div class="col-md-4 project"><div class="overlay">yo</div></div>
+          <div class="col-md-4 project"><div class="overlay">:)</div></div>
+          <div class="col-md-4 project"><div class="overlay">:)</div></div>
+          <div class="col-md-4 project"><div class="overlay">:)</div></div>
         </div>
         <div class="row design">
-          <div class="col-md-4 project"><div class="overlay">yo</div></div>
-          <div class="col-md-4 project"><div class="overlay">yo</div></div>
-          <div class="col-md-4 project"><div class="overlay">yo</div></div>
+          <div class="col-md-4 project"><div class="overlay">:)</div></div>
+          <div class="col-md-4 project"><div class="overlay">:)</div></div>
+          <div class="col-md-4 project"><div class="overlay">:)</div></div>
         </div>
       </div>
 
@@ -90,20 +92,28 @@
           <a href="http://www.github.com/katyf" target="_blank"><i class="fa fa-github fa-4x"></i></a>
           <a href="http://www.linkedin.com/in/katyfeng" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a>
         </div>
-        <form id="contact-form">
+        <form id="contact-form"action="mailto:katy.feng.14@gmail.com" method="post" enctype="text/plain">
           <div class="form-group">
             <input type="email" class="form-control" id="sender" placeholder="Your Email">
           </div>
           <div class="form-group">
             <textarea name="message" id="message" class="form-control" placeholder="Say hello!"></textarea>
           </div>
-          <button type="submit" class="btn btn-default">Send</button>
+          <button type="submit" class="btn btn-default" id="send-email">Send</button>
         </form>
       </div>
     </section>
 
       <footer>
-        KRF
+        <nav class="collapse navbar-collapse" id="js-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class=><a href="#/">Home</a></li>
+            <li><a href="#about_section">About</a></li>
+            <li><a href="#projects_section">Projects</a></li>
+            <li><a href="#/resume">Resume</a></li>
+            <li><a href="#contact_section">Contact</a></li>
+          </ul>
+        </nav>
       </footer>
 
 
@@ -124,11 +134,10 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
     <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <script src="scripts/email.js"></script>
-<!--     <script src="scripts/slider.js"></script>
+<!--     <script src="scripts/email.js"></script>
+ --><!--     <script src="scripts/slider.js"></script>
  -->    <!-- endbuild -->
 </body>
 </html>
