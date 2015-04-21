@@ -43,9 +43,9 @@ $('.web .project').each(function(i) {
     var yPos = window.pageYOffset;
     var scrollPos = 400;
     var home = 400;
-    var about = 800;
-    var projects = 1200;
-    var contact = 1600;
+    var about = 1000;
+    var projects = 1600;
+    var contact = 2200;
 
   if(yPos > scrollPos) {
      $('footer').fadeIn();
@@ -53,12 +53,39 @@ $('.web .project').each(function(i) {
     $('footer').hide();
   }
 
-  if(about > yPos > home){
+  if(yPos > home){
     $('#home-btn').addClass('colored');
     $('#a-home-btn').addClass('white');
   } else {
     $('#home-btn').removeClass('colored');
     $('#a-home-btn').removeClass('white');
+  }
+  if(yPos > about){
+    $('#about-btn').addClass('colored');
+    $('#a-about-btn').addClass('white');
+    $('#home-btn').removeClass('colored');
+    $('#a-home-btn').removeClass('white');
+  } else {
+    $('#about-btn').removeClass('colored');
+    $('#a-about-btn').removeClass('white');
+  }
+  if(yPos > projects){
+    $('#about-btn').removeClass('colored');
+    $('#a-about-btn').removeClass('white');
+    $('#projects-btn').addClass('colored');
+    $('#a-projects-btn').addClass('white');
+  } else {
+    $('#projects-btn').removeClass('colored');
+    $('#a-projects-btn').removeClass('white');
+  }
+  if(yPos > contact){
+    $('#projects-btn').removeClass('colored');
+    $('#a-projects-btn').removeClass('white');
+    $('#contact-btn').addClass('colored');
+    $('#a-contact-btn').addClass('white');
+  } else {
+    $('#a-contact-btn').removeClass('white');
+    $('#contact-btn').removeClass('colored');
   }
 });
 
