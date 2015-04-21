@@ -37,6 +37,31 @@ $('.web .project').each(function(i) {
   $('#send-email').on('click', function(){
     $('#contact-form').hide();
   });
+
+ $('footer').hide();
+ $(window).scroll(function() {
+    var yPos = window.pageYOffset;
+    var scrollPos = 400;
+    var home = 400;
+    var about = 800;
+    var projects = 1200;
+    var contact = 1600;
+
+  if(yPos > scrollPos) {
+     $('footer').fadeIn();
+  } else {
+    $('footer').hide();
+  }
+
+  if(about > yPos > home){
+    $('#home-btn').addClass('colored');
+    $('#a-home-btn').addClass('white');
+  } else {
+    $('#home-btn').removeClass('colored');
+    $('#a-home-btn').removeClass('white');
+  }
+});
+
   // scolling
   $('a[href^="#"]').on('click',function (e) {
       e.preventDefault();

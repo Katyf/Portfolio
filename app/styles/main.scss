@@ -22,8 +22,16 @@ div#main {
   height: 400px;
   color: white;
   #main-text {
-    margin: 300px auto;
+    margin: 200px auto;
     text-align: center;
+    font-family: 'Old Standard TT', serif;
+    #k {
+      color:rgba(251,55,55,.9);
+      font-size: 170px;
+    }
+  }
+  a {
+    color: white;
   }
   img {
     width: 100%;
@@ -35,12 +43,16 @@ div#main {
 }
 
 .content {
-  padding-top: 150px;
+  padding-top: 160px;
   #hello {
     text-align: center;
     color: white;
+    padding: 80px 50px;
     h1 {
       font-size: 80px;
+    }
+    p {
+      font-size: 30px;
     }
   }
   .block {
@@ -50,9 +62,10 @@ div#main {
 
 
 #about {
+  margin: 100px 0 200px 0;
   background-color: rgba(0,0,0, 0.5);
-  padding: 50px;
   color: white;
+  padding: 40px;
   img#profpic {
     height: 200px;
     width: 200px;
@@ -135,6 +148,10 @@ div.buttons {
     i {
       margin: 20px;
     }
+    .a-icon {
+      color: white;
+      text-decoration: none;
+    }
   }
   form {
     padding: 50px;
@@ -153,18 +170,38 @@ div.buttons {
 }
 
 footer {
-  color: white;
   position: fixed;
+  padding: 20px 30px 0 30px;
   bottom: 0;
-  width: 80%;
+  height: 120px;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
-  ul {
-    li {
-      color: white;
-      margin: 0 20px 0 20px;
+  .footer-nav {
+    margin-left: 80px;
+    padding: 25px;
+    .section-btn {
+      display: inline-block;
+      float: left;
+      a {
+        margin: 0 70px 0 70px;
+        color: rgba(251,55,55,.9);
+        font-size: 16px;
       }
+    }
   }
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.colored {
+  background-color: rgba(251,55,55,.9);
+}
+.white {
+  color: white ! important;
+  font-size: 25px;
 }
 
 

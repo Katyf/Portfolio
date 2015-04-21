@@ -14,6 +14,7 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -25,7 +26,7 @@
     <div id="main">
       <img src="images/main_sq.png" alt="">
       <div id="main-text">
-        <h1>k</h1>
+        <h1 id="k">k</h1>
         <h4>katy feng</h4>
         <p>designer // developer</p>
         <a id="#down" href="#down"><i class="fa fa-angle-double-down fa-3x"></i></a>
@@ -35,17 +36,16 @@
 
     <section class="content container">
     <div id="hello">
-      <h1>Hi there!</h1>
-      <h1>I'm Katy</h1>
-      <p>Thanks for visiting my website. Have a look around.</p>
+      <h1>Hi there! I'm Katy</h1>
+      <p>Thanks for visiting my website.</p><p>Have a look around.</p>
     </div>
 
     <!-- jump 1 -->
     <a id="about_section"></a>
-        <div id="about" class="container block row">
+        <div id="about" class="container row">
           <img id="profpic" class="col-md-4" src="../images/me.jpg" alt="">
             <div class="about-wrapper col-md-8">
-              <h4>Hi! I'm Katy, a full stack web developer with a background in art and design.</h4>
+              <h4>I'm Katy, a full stack web developer with a background in art and design.</h4>
               <p>I'm an avid consumer of all things new and innovative. Whether it be fashion or technology, I keep up on the latest trends. I have an adventurous spirit and am always down to try something new. I have a relentless shoe addiction and have been known to pack a punch in the boxing ring. I like my code clean, my clothes bold, and my coffee iced.</p>
               <p>Please feel free to check out a couple of my projects below, or shoot me an email if you'd like to know more!</p>
             </div>
@@ -88,9 +88,9 @@
    <a id="contact_section"></a>
       <div id="contact" class="block">
         <div class="icons">
-          <a href= "#" class="show-form"><i class="fa fa-envelope fa-4x"></i></a>
-          <a href="http://www.github.com/katyf" target="_blank"><i class="fa fa-github fa-4x"></i></a>
-          <a href="http://www.linkedin.com/in/katyfeng" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a>
+          <a class="a-icon" href= "#" class="show-form"><i class="fa fa-envelope fa-4x"></i></a>
+          <a class="a-icon" href="http://www.github.com/katyf" target="_blank"><i class="fa fa-github fa-4x"></i></a>
+          <a class="a-icon" href="http://www.linkedin.com/in/katyfeng" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a>
         </div>
         <form id="contact-form"action="mailto:katy.feng.14@gmail.com" method="post" enctype="text/plain">
           <div class="form-group">
@@ -105,15 +105,13 @@
     </section>
 
       <footer>
-        <nav class="collapse navbar-collapse" id="js-navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#/">Home</a></li>
-            <li><a href="#about_section">About</a></li>
-            <li><a href="#projects_section">Projects</a></li>
-            <li><a href="#/resume">Resume</a></li>
-            <li><a href="#contact_section">Contact</a></li>
-          </ul>
-        </nav>
+          <div class="footer-nav">
+            <div class="section-btn" id="home-btn"><a id="a-home-btn" href="#down">Home</a></div>
+            <div class="section-btn" id="about-btn"><a id="a-about-btn" href="#about_section">About</a></div>
+            <div class="section-btn" id="projects-btn"><a id="a-projects-btn" href="#projects_section">Projects</a></div>
+            <div class="section-btn" id="resume-btn"><a href="images/KatyFengResume.pdf" target="_blank">Resume</a></div>
+            <div class="section-btn" id="contact-btn"><a id="a-contact-btn" href="#contact_section">Contact</a></div>
+          </div>
       </footer>
 
 
