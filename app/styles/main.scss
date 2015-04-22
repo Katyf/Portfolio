@@ -88,6 +88,15 @@ div#main {
     }
 }
 
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 668px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .about-wrapper {
+      max-width: 100%;
+    }
+}
+
 div.buttons {
   padding: 20px 20px 20px 0px;
   button {
@@ -246,3 +255,4 @@ a:link {
     max-width: 850px;
   }
 }
+
